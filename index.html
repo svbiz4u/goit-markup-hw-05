@@ -346,20 +346,33 @@
             <button type="button" class="modal-close-btn" data-modal-close>
                 <svg class="modal-icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-close-1"></use>
-                  </svg>
+                </svg>
             </button>
             <p class="modal-title">Leave your contacts and we will call you back</p>
             <form>
-                  <Label class="label-inline">Name<input type="text" name="user-name" class="modal-input"/> </Label>     
+                 <Label class="label-inline">Name<input type="text" name="user-name" class="modal-input"/> </Label>     
                   <Label class="label-inline">Phone<input type="text" name="user-phone" class="modal-input"/> </Label>  
-                  <Label class="label-inline">Email<input type="text" name="user-emeil" class="modal-input"/>  </Label>
+                  <Label class="label-inline">Email<input type="email" name="user-emeil" class="modal-input"/>  </Label>
                   <Label class="label-inline">Comment<input type="text" name="user-text" class="modal-input" placeholder="Text input"/> </Label>
                   <button type="submit">send</button>
+              
+                  <div class="modal"> 
+                    <input type="checkbox" name="user-terms" id="user-terms" value="one">
+                    <label for="user-terms" class="check-text"> 
+                     <span>
+                         <svg class="check-item " width="16" heigth="16">
+                             <use href="./images/icons.svg#icon-Property-1click">
+                             </use>
+                         </svg>
+                     </span>I accept the terms and conditions of the <a href="" class="privacy-link">Privacy Policy</a>
+                     </label>
+                 </div>
 
             </form>
         </div>
+        
     </div>
     <script src="./js/modal.js">
-    </script>
+    </script> 
 </body>
 </html>

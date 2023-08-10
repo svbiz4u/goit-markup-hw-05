@@ -597,6 +597,36 @@ letter-spacing: 0.32px;
 max-width: 360px;
 margin-bottom: 16px;
 }
+
+.check-text {
+color: #8E8F99;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.48px;
+display: flex;
+align-items: center;
+}
+
+
+.check-text span{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 16px;
+height: 16px;
+border-radius: 1px;
+border:  rgba(46, 47, 66, 0.40);
+margin-right: 8px;
+}
+
+.check-item {
+  fill:transparent;
+}
+
+.privacy-link{
+color:#4D5AE5;
+}
+
 .label-inline {
 display: block;
 color: #8E8F99;
