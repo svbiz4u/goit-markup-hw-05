@@ -339,6 +339,21 @@
                     </li>
                 </ul>
             </div>
+            <div class="form-footer-div">    
+                <p class="form-footer-subscribe">Subscribe</p>  
+                <form name="email" class="footer-form">   
+                  <label for="email" class="footer-label">  
+                    <input type="email"  name="email"  id="email" class="footer-email" placeholder="E-mail"
+                    />
+                  </label>
+                  <button type="submit" class="form-footer-button">    
+                    Subscribe
+                    <svg class="form-footer-icon-send" width="24" height="24">  
+                      <use href="./images/icons.svg#icon-send"></use>
+                    </svg>
+                  </button>
+                </form>
+            </div>
         </div> 
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -350,27 +365,50 @@
             </button>
             <p class="modal-title">Leave your contacts and we will call you back</p>
             <form>
-                 <Label class="label-inline">Name<input type="text" name="user-name" class="modal-input"/> </Label>     
-                  <Label class="label-inline">Phone<input type="text" name="user-phone" class="modal-input"/> </Label>  
-                  <Label class="label-inline">Email<input type="email" name="user-emeil" class="modal-input"/>  </Label>
-                  <Label class="label-inline">Comment<input type="text" name="user-text" class="modal-input" placeholder="Text input"/> </Label>
-                  <button type="submit">send</button>
-              
-                  <div class="modal"> 
-                    <input type="checkbox" name="user-terms" id="user-terms" value="one">
-                    <label for="user-terms" class="check-text"> 
-                     <span>
-                         <svg class="check-item " width="16" heigth="16">
-                             <use href="./images/icons.svg#icon-Property-1click">
-                             </use>
+                <div class="data-form-container">
+                    <label for="user-name" class="data-label">Name</label>
+                    <div class="data-form">
+                      <input class="data-type-text" type="text"  name="user-name"/>
+                      <svg class="input-icon" width="18" height="24">
+                        <use href="./images/icons.svg#icon-person"></use>
+                      </svg>
+                    </div>
+                </div>
+                <div class="data-form-container">
+                    <label for="phone-number" class="data-label">Phone</label>
+                    <div class="data-form">
+                      <input  class="data-type-text" type="text" name="phone-number" id="phone-number"/>
+                      <svg class="input-icon" width="18" height="24">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                      </svg>
+                    </div>
+                </div>
+                <div class="data-form-container">
+                    <label for="data-email" class="data-label">Email</label>
+                    <div class="data-form">
+                      <input class="data-type-text" type="email" name="email" id="data-email"/>
+                      <svg class="input-icon" width="18" height="24">
+                        <use href="./images/icons.svg#icon-email"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="data-form-textarea">
+                    <label for="user-comment" class="data-label">Comment </label>
+                    <textarea class="data-textarea" name="user-comment" id="user-comment" placeholder="Text input" cols="30" rows="10"></textarea>
+                  </div>
+                   <div class="data-privacy"> 
+                    <input type="checkbox" name="user-privacy" id="user-privacy" value="true" class="visually-hidden input-checkbox"/>
+                    <label for="user-privacy" class="user-privacy">
+                     <span class="data-check-svg">
+                         <svg class="check-item" width="16" heigth="16">
+                             <use href="./images/icons.svg#icon-check"></use>
                          </svg>
                      </span>I accept the terms and conditions of the <a href="" class="privacy-link">Privacy Policy</a>
                      </label>
                  </div>
-
+                 <button type="submit" class="button-send">send</button>
             </form>
         </div>
-        
     </div>
     <script src="./js/modal.js">
     </script> 
