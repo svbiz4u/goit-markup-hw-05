@@ -710,7 +710,7 @@ justify-content: center;
 fill: transparent;
 }
 
-.input-checkbox:checked+ .user-privacy > .data-check-svg{
+.input-checkbox:checked + .user-privacy > .data-check-svg{
 background-color: #404BBF;
 border: none;
 fill: #F4F4FD;;
